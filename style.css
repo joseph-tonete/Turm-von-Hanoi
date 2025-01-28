@@ -1,0 +1,120 @@
+@font-face {
+    font-family: nanito;
+    src: url(fonts/Nunito-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "nanito";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body .main-frame {
+    width: 1100px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff000000;
+}
+
+body .disk-input-text {
+    width: 800px;
+    margin-bottom: 50px;
+    font-size: 23px;
+    color: #202020;
+    display: flex;
+    justify-content: space-around;
+}
+
+body .disk-input-text .disk-input {
+    width: 46px;
+    height: 30px;
+    text-indent: 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 1px solid #d3d3d3;
+    padding-right: 12px;
+}
+
+body .disk-input-text .disk-input-button-create {
+    height: 30px;
+    padding: 0px 15px 0px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    border: 1px solid rgb(66, 134, 111);
+    color: #202020;
+}
+
+body .disk-input-text .disk-input-button-pause {
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: crimson;
+    border: 1px solid rgb(125, 11, 34);
+    color: white;
+}
+
+body .disk-input-text .disk-input-button-start {
+    text-align: center;
+    width: 90px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: rgb(20, 220, 43);
+    border: 1px solid rgb(11, 125, 24);
+    color: white;
+}
+
+body .disk-input-text .disk-input-button-movement {
+    text-align: center;
+    width: 36px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 20px;
+    border: 1px solid #d3d3d3;
+}
+
+body .disk-input-text .velocity-input {
+    width: 66px;
+    height: 30px;
+    font-size: 15px;
+    text-indent: 12px;
+    border-radius: 20px;
+    border: 1px solid #d3d3d3;
+    padding-right: 10px;
+}
+
+body .main-frame .tower-container {
+    height: 100%;
+    width: 300px;
+    background-color: #4f2d2d00;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+body .main-frame .tower-container .tower-disk {
+    background-color: #00000010;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px -10px rgb(147, 147, 147);
+}
+
+body .main-bottom {
+    width: 1150px;
+    height: 50px;
+    border-radius: 600px;
+    background-color: burlywood;
+    box-shadow: 0px 0px 20px -10px rgb(130, 130, 130);
+}

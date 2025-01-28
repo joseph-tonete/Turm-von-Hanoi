@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torre de Hanói</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <header>
+        <form class="disk-input-text" method="dialog"> 
+            <div>
+                <label for="disk-input">Número de discos:</label>
+                <input type="number" id="disk-input" class="disk-input" value="6" min="2" max="64">
+            </div>
+            <div>
+                <button onclick="criar()" class="disk-input-button-create">Criar</button>
+            </div>
+            <div>
+                <button onclick="startPause(this)" id="disk-control" class="disk-input-button-start">Começar</button>
+            </div>
+            <div>
+                <lable for="velocity-input">Intervalo:</lable>
+                <input type="number" id="velocity-input" class="velocity-input" value="500" min="1" max="5000">
+            </div>
+            <div>
+                <button onclick="forwardBackward(-1)" class="disk-input-button-movement">◄</button>
+                <button onclick="forwardBackward(1)" class="disk-input-button-movement">►</button>
+            </div>
+        </form>
+    </header>
+    <main>
+        <div class="main-frame">
+            <div id="tower-1" class="tower-container"></div>
+            <div id="tower-2" class="tower-container"></div>
+            <div id="tower-3" class="tower-container"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="main-bottom"></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
